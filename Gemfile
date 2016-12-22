@@ -30,9 +30,16 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use RuboCop for check the Ruby code style
+gem 'rubocop', '~> 0.46.0', require: false
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  # Framework for testing
+  gem 'rspec-rails', '~> 3.5'
+  # Use to load environment variables from .env
+  gem 'dotenv-rails', :groups => [:development, :test]
 end
 
 group :development do

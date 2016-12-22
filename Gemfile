@@ -34,7 +34,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'rubocop', '~> 0.46.0', require: false
 # Use for user authentication
 gem 'devise'
-#gem 'cancancan
+gem 'cancancan'
+gem 'rolify'
+# Use for style
+gem 'bootstrap-sass', '3.3.6'
+# Use to manage DB schema
+gem 'ridgepole'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

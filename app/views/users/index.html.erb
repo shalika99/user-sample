@@ -1,0 +1,30 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+<% unless @users.blank? %>
+  <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>氏名</th>
+            <th>メールアドレス</th>
+            <th>仮パスワード</th>
+            <th>管理者フラグ</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+    <% @users.each do |user| %>
+      <tbody>
+         <tr>
+           <td><%= user.name %></td>
+           <td><%= user.email %></td>
+           <td></td>
+           <td><%= user.role %></td>
+           <td><%= link_to "編集", "#" %></td>
+           <td><%= link_to "削除", "#"%></td>
+         </tr>
+       </tbody>
+    <% end %>
+    </table>
+  </div>
+<% end %>

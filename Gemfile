@@ -32,6 +32,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use RuboCop for check the Ruby code style
 gem 'rubocop', '~> 0.46.0', require: false
+# Use for user authentication
+gem 'devise'
+#gem 'cancancan
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
